@@ -24,12 +24,12 @@ The project is built using SQL queries to analyze a pizza sales database and ans
 ## 🧠 SQL Queries
 
 ### 1. Total Number of Orders
-' ' 'sql
+' ' ' sql
 SELECT COUNT(DISTINCT order_id) AS total_orders FROM orders;
 ' ' '
 
 ### 2. Total Revenue Generated
-' ' 'sql
+' ' ' sql
 SELECT SUM(quantity * price) AS total_revenue 
 FROM order_details 
 JOIN pizzas ON order_details.pizza_id = pizzas.pizza_id;
